@@ -1,0 +1,95 @@
+/* Root CSS Variables */
+:root {
+    --primary-bg-color: #000000; /* Black */
+    --secondary-bg-color: #f9f9f9; /* Light grey */
+    --card-bg-color: #ffffff; /* White background */
+    --text-color: #333333; /* Dark grey text */
+    --button-bg-color: #ff6363; /* Vibrant bright accent color for buttons */
+    --button-hover-color: #e04f4f; /* Slightly darker vibrant color for button hover */
+    --border-color: #ddd; /* Light grey border */
+    --shadow-color: rgba(0, 0, 0, 0.3); /* Shadow color */
+    --hover-bg-color: #f1f1f1; /* Light grey on hover */
+    --inactive-bg-color: #d3d3d3; /* Light grey for inactive elements */
+}
+
+/* Navigation */
+nav {
+    padding: 5px 0;
+    background: transparent; /* Dark background for better contrast */
+    margin-bottom: 0;
+}
+
+/* Header container */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+
+/* Left side (Logo) */
+.left h1 {
+    color: var(--card-bg-color); /* White color for the logo */
+    font-size: 24px;
+    margin: 0; /* Remove unwanted spacing */
+}
+
+/* Right side (Nav links & profile) */
+.right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds space between elements */
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--card-bg-color); /* White color for links */
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: var(--hover-bg-color); /* Light grey background on hover */
+    color: var(--primary-bg-color); /* Black color on hover */
+}
+
+/* Styled Logout Button */
+.logout-btn {
+    background: transparent;
+    border: 2px solid var(--card-bg-color); /* White border */
+    color: var(--card-bg-color); /* White text */
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: var(--card-bg-color); /* White background on hover */
+    color: var(--primary-bg-color); /* Black color on hover */
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--card-bg-color); /* White color for profile text */
+    font-size: 18px;
+}
+
+.profile i {
+    font-size: 22px;
+}

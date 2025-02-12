@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div id="container">
+    <div id="list-header">
+        <div id="addNoteDiv" onclick="popup()">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="blankDiv"></div>
+        <div class="blankDiv"></div>
+    </div>
+    
+    <div id="list-container">
+        <ul id="notes-list"></ul>
+    </div>
+</div>
+{% endblock %}
